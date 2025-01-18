@@ -1,0 +1,166 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+.poppins-regular {
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* common style  */
+
+.display-flex {
+    display: flex;
+}
+
+.dark-1 {
+    color: rgb(58, 58, 58);
+}
+
+/* nav style  */
+.navbar {
+    justify-content: space-between;
+    width: 1200px;
+    margin: 0 auto;
+    margin-top: 50px;
+    border: 1px solid rebeccapurple;
+}
+
+.nav-links {
+    gap: 32px;
+}
+
+.nav_item {
+    list-style: none;
+}
+
+.nav_link {
+    text-decoration: none;
+    color: rgb(58, 58, 58);
+    font-size: 16px;
+    font-weight: 600;
+}
+
+/* banner style  */
+.banner {
+    align-items: center;
+    margin-top: 50px;
+    justify-content: center;
+    gap: 133px
+}
+
+.banner-title {
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 60px;
+}
+
+.banner-description {
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 15px 10px;
+}
+
+.btn {
+    color: white;
+    background-color: rgb(224, 44, 109);
+    border-radius: 40px;
+    border: none;
+    padding: 10px 24px;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.banner-right {
+    background-image: url(assets/images/Circle\ design.svg);
+    background-size: cover;
+}
+
+/* sponsor-icon  */
+.sponsor {
+    width: 1110px;
+    margin: 0 auto;
+    margin-top: 70px;
+    display: flex;
+    justify-content: space-around;
+    border-top: 1px solid ;
+    border-bottom: 1px solid;
+    border-color: rgba(192, 204, 218);
+    padding: 30px 0px;
+}
+
+
+
+
+
+@media screen and (max-width: 576px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+
+    }
+
+    .nav-links {
+        margin-top: 20px;
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+
+    .icon {
+        display: none;
+    }
+
+    .banner {
+        flex-direction: column;
+        gap: 0px;
+        flex-direction: column-reverse;
+    }
+
+    .bannar-left {
+        text-align: center;
+    }
+
+    .banner-title {
+        font-size: 28px;
+
+    }
+
+    .banner-description {
+        font-size: 14px;
+        padding: 0px 10px;
+    }
+
+    .banner-right {
+        margin-top: 20px;
+        margin-bottom: 10px;
+
+        width: 257px;
+        height: 257px;
+    }
+
+    .banner-img {
+        width: 100%;
+    }
+
+    .sponsor {
+        width: 100%;
+        flex-wrap: wrap;
+        gap: 60px;
+        justify-content: center;
+        margin: 50px 20px;
+        border: none;
+       
+
+
+    }
+
+    .sponsor-img {
+        width: 65px;
+
+    }
+}
